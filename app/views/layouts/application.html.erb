@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Rails Bootstrap" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+      <%= render 'layouts/header' %>
+      <%= render 'layouts/navigation' %>
+    <div class="container">
+      <main role="main">
+         <%= render 'layouts/messages' %>       
+         <%= yield %>
+      </main>
+    </div>
+  </body>
+</html>

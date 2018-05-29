@@ -1,0 +1,8 @@
+<fieldset>
+  <%#= f.select :meta_keys, %w[text_field check_box shirt_sizes] %>
+  <%= f.text_field :meta_keys, placeholder: "key" %>
+  <%= f.text_field :meta_values, placeholder: "value" %>
+  <%#= f.check_box :required %> <%#= f.label :required %>
+  <%= f.hidden_field :_destroy %>
+  <%= link_to "remove", '#', class: "remove_fields" %>
+</fieldset>

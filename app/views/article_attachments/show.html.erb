@@ -1,0 +1,12 @@
+<p>
+  <strong>Article:</strong>
+  <%= @article_attachment.article_id %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @article_attachment.avatar %>
+</p>
+
+<%= link_to 'Edit', edit_article_attachment_path(@article_attachment) %> |
+<%= link_to 'Back', article_attachments_path %>
