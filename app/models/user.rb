@@ -10,7 +10,7 @@ class User < ApplicationRecord
 has_secure_password     
 
 mount_uploaders :avatars, AvatarUploader
-serialize :avatars, JSON
+#serialize :avatars, JSON
 
 has_many :comments
 
