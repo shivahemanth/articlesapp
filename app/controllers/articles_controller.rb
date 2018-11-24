@@ -12,9 +12,8 @@ class ArticlesController < ApplicationController
       format.js
     end
   end
-
-  # GET /articles/1
-  # GET /articles/1.json
+  
+  #show action
   def show
   end
 
