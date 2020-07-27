@@ -16,6 +16,6 @@ test:
 
 production:
   <<: *default
-  database: ENV['DATABASE_URL']
+  database: ENV['CLEARDB_DATABASE_URL']
   username: ENV['CLEARDB_DATABASE_USERNAME']
   password: ENV['CLEARDB_DATABASE_PASSWORDs']
